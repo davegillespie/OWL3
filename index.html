@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MySite">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Dave's Angular Portfolio </title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="head-nav">
+                <!-- <img src="OWL_design1.png" height="150px" width="175px" class="head-1"/> -->
+                <h1 class="head-h1"> OWL </h1>
+            <ul class="head-ul">
+                
+                <li><a href="#!/home">Home</a></li>
+                <li><a href="#!/about-us">About Us</a></li>
+                <li><a href="#!/contact-us">Contact Us</a></li>
+                <li><a href="#!/sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="maincontainer">
+        <div class="sidenav">
+            <a href="#!/orders">Orders</a>
+            <a href="#!/shipments">Shipments</a>
+            <a href="#!/dispatches">Dispatches</a>
+            <button class="dropdown-btn">MacroView
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#!/inbounds">Inbounds</a>
+              <a href="#!/outbounds">Outbounds</a>
+              <a href="#!/warehouses">Warehouses</a>
+            </div>
+            <a href="#!/analytics">Analytics</a>
+            <a href="#!/locations">Locations</a>
+            <a href="#!/carriers">Carriers</a>
+            <button class="dropdown-btn">Admin
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#!/employees">Employees</a>
+              <a href="#!/equipment">Equipment</a>
+              <a href="#!/accountspay">Accounts Pay</a>
+              <a href="#!/accountsrec">Accounts Rec</a> 
+            </div>
+        </div>
+
+        
+
+    <main id="main" ng-view>
+        <!--- Anything configured in the route is going to be injected into here--->
+        
+        
+
+    </main>
+
+    </div>
+
+    <footer> 
+            <nav class="footer-nav">   
+                <ul class="footer-ul">               
+                    <li><a href="#!/linked-in">LinkedIn</a></li>
+                    <li><a href="#!/facebook">Facebook</a></li>
+                    <li><a href="#!/twitter">Twitter</a></li>
+                </ul>
+            </nav>
+    </footer>
+
+  
+    <script src="https://code.angularjs.org/1.7.8/angular.js"></script>
+    <script src="https://code.angularjs.org/1.7.8/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="components/home/home.js"></script>
+    <script src="components/about-us/aboutUs.js"></script>
+    <script src="components/contact-us/contactUs.js"></script>
+    <script src="components/sign-up/signUp.js"></script>
+
+    <script src="components/orders/orders.js"></script>
+    <script src="components/shipments/shipments.js"></script>
+    <script src="components/dispatches/dispatches.js"></script>
+    <script src="components/inbounds/inbounds.js"></script>
+    <script src="components/outbounds/outbounds.js"></script>
+    <script src="components/warehouses/warehouses.js"></script>
+    <script src="components/analytics/analytics.js"></script>
+    <script src="components/locations/locations.js"></script>
+    <script src="components/carriers/carriers.js"></script>
+    <script src="components/employees/employees.js"></script>
+    <script src="components/equipment/equipment.js"></script>
+    <script src="components/accountspay/accountspay.js"></script>
+    <script src="components/accountsrec/accountsrec.js"></script>
+   
+
+    <script src="app.config.js"></script>
+    <script src="main.js"></script>
+
+    
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=<<Map API Goes Here>>&callback=initMap">
+          </script>
+
+</body>
+
+
+</html>
