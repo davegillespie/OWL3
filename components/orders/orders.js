@@ -57,15 +57,9 @@ angular
                         <li><button class="shipmentbtn" ng-click="addToShipmentsList(detail)">Create Shipment</button></li>       
                     </ul>   
                 </div>
-
-
-
-
             
-            <form class="create-order" ng-submit="addDetail()" ng-show="showTheForm" ng-submit="processForm()>
+            <form class="create-order" ng-submit="addDetail()" ng-show="showTheForm" ng-submit="processForm()">
             
-            <input type="text" placeholder=""/>
-
                 <h4>NEW ORDER:</h4>
                 <p>Pickup Details:</p>
                 
@@ -76,12 +70,6 @@ angular
                     <input type="submit" value="SUBMIT" />
                     <input type="button" ng-click="showTheForm = false" value="CANCEL" />
                 </form>
-
-
-
-
-
-
                 <br>
                     
                 <table>
@@ -94,7 +82,6 @@ angular
                     </thead>
                     <tbody>
                         </tr>
-
                         <tr ng-repeat="detail in details" >
                             <td><input type="checkbox" data-checklist-model="shipment.details" data-checklist-value="detail"/></td>
                             <td> {{ detail.pufacilityname }} </td>
@@ -103,7 +90,6 @@ angular
                         </tr>
                     </tbody>
                 </table>
-
             </section>`, // or use templateUrl 20
         controller: OrdersController
         });

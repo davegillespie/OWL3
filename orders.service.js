@@ -9,9 +9,9 @@ function OrdersService() {
     service.shipments = [];
     // service.shipment= [];
 
-    service.addToShipmentsList = (details) => {
-      console.log(details);
-      service.shipments.push(details);
+    service.addToShipmentsList = (detail) => {
+      console.log(detail);
+      service.shipments.push(detail);
 
     //   if (service.isInShipmentsList(details) !== false) {
     //     console.log("already in ShipmentsList");
@@ -19,7 +19,7 @@ function OrdersService() {
     //   else {
     //     service.shipments.push(details);
     //   }
-        console.log(`current order list: ${details}`);
+        console.log(`current order list: ${detail}`);
       }
     
     };

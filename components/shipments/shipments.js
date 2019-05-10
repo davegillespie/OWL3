@@ -11,7 +11,6 @@ console.log(ctrl.shipments);
 angular.module('MySite').component('shipments', {
   template: `
       <section id="shipments">
-
         <div class="insideheader"> 
         <h3>Shipments</h3>  
             <ul class="insideheader-nav">       
@@ -19,7 +18,6 @@ angular.module('MySite').component('shipments', {
                 <li><button class="btnSomething">Something</button></li>       
             </ul>   
         </div>
-
         <table>
         <thead>
             <tr>
@@ -51,14 +49,8 @@ angular.module('MySite').component('shipments', {
             </tr>
          </tbody>   
         </table>
-
-
-
-
-
         
         
-
       
         </section>`, // or use templateUrl
   controller: ShipmentsController,
