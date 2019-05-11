@@ -2,9 +2,9 @@ function ShipmentsController(OrdersService) {
     let ctrl = this;
 // }
 
-ctrl.shipments = OrdersService.shipments;
+    ctrl.shipments = OrdersService.shipments;
 
-console.log(ctrl.shipments);
+    console.log(ctrl.shipments);
 
 }
 
